@@ -1,0 +1,111 @@
+sources:
+  naturalized_10km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DA_10km/DELTA/NATURALIZED/TIDE_HYMAP_RA/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 10km Naturalized Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+  
+  realworld_10km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DA_10km/DELTA/REALWORLD/TIDE_HYMAP_RA_MAN/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 10km Realworld Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+  
+  no_slr_10km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/OL_10km/DELTA/NO_SLR/OL_HYMAP_RA_MAN/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 10km No Sea-level Rise Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+    
+  control_2km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/CONST_RA/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km Control Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+  
+  control_2km_surfacemodel:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/CONST_RA/SURFACEMODEL/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km Control Case (surfacemodel output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+    
+  naturalized_2km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/SEA_RA/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km Naturalized Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+    
+  naturalized_2km_surfacemodel:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/SEA_RA/SURFACEMODEL/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km Naturalized Case (surfacemodel output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+  
+  realworld_2km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/SEA_RA_MAN/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km  Realworld Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+
+  realworld_2km_surfacemodel:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/SEA_RA_MAN/SURFACEMODEL/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km  Realworld Case (surfacemodel output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+  
+  no_slr_2km_routing:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/CONST_RA_MAN/ROUTING/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km No Sea-level Rise Case (routing output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+    
+  no_slr_2km_surfacemodel:
+    args:
+      urlpath: s3://eis-dh-hydro/LIS/DELTA_2km/CONST_RA_MAN/SURFACEMODEL/LIS_HIST.d01.zarr/
+      consolidated: true
+      storage_options:
+        anon: false
+    description: LIS Model Output -- Delta 2km No Sea-level Rise Case (surfacemodel output)
+    driver: intake_xarray.xzarr.ZarrSource
+    metadata: {}
+
